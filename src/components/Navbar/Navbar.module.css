@@ -2,8 +2,14 @@
     grid-area: n;
     background-color: lightgreen;
     flex-direction: column;
+    padding: 20px;
 }
 
-.item {
+.item a{
     color: #fff;
+    text-decoration: none;
+}
+
+.item a.activeLink {
+    color: green;
 }
