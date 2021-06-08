@@ -3,15 +3,10 @@ import React from 'react'
 import s from './MyPosts.module.css'
 import Post from "./Post/Post";
 
-const MyPosts = () => {
-    let posts = [
-        {id: 1, message: 'Hi', likesCount: 2},
-        {id: 2, message: 'Beer', likesCount: 2},
-        {id: 3, message: 'I love you', likesCount: 96},
-        {id: 4, message: 'Bla-bla-bla', likesCount: 22}
-]
+const MyPosts = (props) => {
 
-    let postElements = posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>)
+    let postElements =
+        props.posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>)
 
     return (
         <div className={s.content}>
