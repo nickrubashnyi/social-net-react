@@ -6,7 +6,6 @@ import MessageItem from "./Message/Message";
 
 const Dialogs = (props) => {
 
-
     let dialogsElements = props.state.dialogs
         .map( d => <DialogItem name={d.name} id={d.id}/>)
     let messageElements = props.state.messages
@@ -27,7 +26,7 @@ const Dialogs = (props) => {
             </div>
             <div className={s.messages}>
                 {messageElements}
-                <textarea ref={NewMessageText}></textarea>
+                <textarea ref={NewMessageText}/>
                 <button onClick={AddMessage}>Click</button>
             </div>
         </div>
