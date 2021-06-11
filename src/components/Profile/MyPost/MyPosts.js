@@ -6,16 +6,16 @@ import Post from "./Post/Post";
 const MyPosts = (props) => {
 
     let postElements =
-        props.posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>)
+        props.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
 
     let newPostElement = React.createRef();
 
     let addPost = () => {
-        props.addPost()
+        props.dispatch({type: 'ADD-POST'})
     }
     let onPostChange = (newPostElement) => {
         let text = newPostElement.target.value
-        props.updateNewPostText(text)
+        props.dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: text})
 
     }
 
@@ -26,13 +26,13 @@ const MyPosts = (props) => {
                 <h3>My posts</h3>
                 <div>
                     <div>
-                        <textarea ref={ newPostElement }
+                        <textarea ref={newPostElement}
                                   value={props.newPostText}
                                   onChange={onPostChange}/>
                     </div>
 
                     <div>
-                        <button onClick={ addPost }>Add post</button>
+                        <button onClick={addPost}>Add post</button>
                     </div>
                 </div>
                 <div className={s.posts}>

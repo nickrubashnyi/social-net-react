@@ -4,7 +4,6 @@
     <list default="true" id="b0aa51a2-aaf5-40fa-8501-6ad178d001c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPost/MyPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPost/MyPosts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
     </list>
@@ -76,7 +75,7 @@
       <workItem from="1616587588666" duration="10768000" />
       <workItem from="1616691135018" duration="1246000" />
       <workItem from="1616692401109" duration="1798000" />
-      <workItem from="1623076713382" duration="37577000" />
+      <workItem from="1623076713382" duration="38999000" />
     </task>
     <servers />
   </component>
