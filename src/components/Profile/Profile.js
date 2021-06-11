@@ -8,7 +8,7 @@ const Profile = (props) => {
     return (
         <div className={s.content}>
             <ProfileInfo/>
-            <MyPogit sts posts={props.profilePage.posts}
+            <MyPosts posts={props.profilePage.posts}
                      dispatch={props.dispatch}
                      newPostText={props.profilePage.newPostText}
             />
